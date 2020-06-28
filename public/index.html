@@ -28,7 +28,20 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <nav id="app-nav" class="flex border-b">
+      <li class="mr-1">
+        <button class="app-tab-btn app-tab-btn--active" data-id="root-mobx">MobX</button>
+      </li>
+      <li class="mr-1">
+        <button class="app-tab-btn" data-id="root-context">Context</button>
+      </li>
+      <li class="mr-1">
+        <button class="app-tab-btn" data-id="root-xstate">XState</button>
+      </li>
+    </nav>
+    <div class="app-tab-panel" id="root-mobx"></div>
+    <div class="app-tab-panel" id="root-context"></div>
+    <div class="app-tab-panel" id="root-xstate"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
